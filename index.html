@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+  </head>
+  <style>
+    .parent {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap-reverse;
+      align-items: baseline;
+      align-content: end;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .parent .child-1 {
+      padding: 30px 20px;
+      color: #316d03;
+      background-color: #6b0c0c;
+      order: 0;
+    }
+    .parent .child-2 {
+      padding: 30px 20px;
+      color: #6b0c0c;
+      background-color: aqua;
+    }
+    .parent .child-3 {
+      padding: 30px 20px;
+      color: #2c0315;
+      background-color: beige;
+    }
+
+    .navigation nav ul {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap-reverse;
+      align-items: baseline;
+      align-content: end;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .navigation nav ul li {
+      display: flex;
+      list-style: none;
+      padding: 0px 10px;
+      color: #37053e;
+      padding: 30px 20px;
+      color: #316d03;
+      background-color: #21010a;
+      order: 0;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <div class="child-1">1</div>
+      <div class="child-2">2</div>
+      <div class="child-3">3</div>
+    </div>
+    <div class="navigation">
+      <nav>
+        <ul>
+          <li class="active">Home</li>
+          <li>Portfolio</li>
+          <li>Service</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
